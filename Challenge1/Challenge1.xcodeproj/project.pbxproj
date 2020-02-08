@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BEB4355123EF4E0D00B1291A /* ChairScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB4355023EF4E0D00B1291A /* ChairScene.swift */; };
+		BEB4355323EF538200B1291A /* TabelScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB4355223EF538200B1291A /* TabelScene.swift */; };
 		E7BFBC1623C5302100211052 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BFBC1523C5302100211052 /* AppDelegate.swift */; };
 		E7BFBC1C23C5302100211052 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BFBC1B23C5302100211052 /* GameScene.swift */; };
 		E7BFBC1E23C5302100211052 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BFBC1D23C5302100211052 /* GameViewController.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BEB4355023EF4E0D00B1291A /* ChairScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChairScene.swift; sourceTree = "<group>"; };
+		BEB4355223EF538200B1291A /* TabelScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabelScene.swift; sourceTree = "<group>"; };
 		E7BFBC1223C5302100211052 /* Challenge1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Challenge1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7BFBC1523C5302100211052 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E7BFBC1B23C5302100211052 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
@@ -58,6 +62,8 @@
 			children = (
 				E7BFBC1523C5302100211052 /* AppDelegate.swift */,
 				E7BFBC1B23C5302100211052 /* GameScene.swift */,
+				BEB4355023EF4E0D00B1291A /* ChairScene.swift */,
+				BEB4355223EF538200B1291A /* TabelScene.swift */,
 				E7BFBC1D23C5302100211052 /* GameViewController.swift */,
 				E7BFBC1F23C5302100211052 /* Main.storyboard */,
 				E7BFBC2223C5302200211052 /* Assets.xcassets */,
@@ -138,6 +144,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEB4355323EF538200B1291A /* TabelScene.swift in Sources */,
+				BEB4355123EF4E0D00B1291A /* ChairScene.swift in Sources */,
 				E7BFBC1C23C5302100211052 /* GameScene.swift in Sources */,
 				E7BFBC1E23C5302100211052 /* GameViewController.swift in Sources */,
 				E7BFBC1623C5302100211052 /* AppDelegate.swift in Sources */,

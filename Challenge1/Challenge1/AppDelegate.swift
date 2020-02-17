@@ -15,7 +15,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        // This allow us to make Container controller is the main controller
+        window = UIWindow()
+        window?.makeKeyAndVisible()
+        window?.rootViewController = ContainerController()
+        
+        // For navigation appearance
+        
+        
         return true
     }
 

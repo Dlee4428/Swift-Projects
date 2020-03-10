@@ -38,6 +38,7 @@ class ItemScene: SKScene {
         
         backButton = UIButton()
         backButton.frame = CGRect(x: 10 , y: 750, width: 120, height: size.height / 15)
+        backButton.layer.borderWidth = 5
         backButton.addTarget(self, action: #selector(ChangeChairSence), for: UIControl.Event.touchUpInside)
         view.addSubview(backButton)
         
@@ -50,6 +51,7 @@ class ItemScene: SKScene {
                
         ARButton = UIButton()
         ARButton.frame = CGRect(x: 230, y: 760, width: 175, height: size.height / 20)
+        ARButton.layer.borderWidth = 5
         
         ///CHANGE TO AR SCENE NOT COMPLETE >>
         ARButton.addTarget(self, action: #selector(EnterAR), for: UIControl.Event.touchUpInside)
@@ -64,6 +66,7 @@ class ItemScene: SKScene {
                
         cartButton = UIButton()
         cartButton.frame = CGRect(x: 120, y: 650, width: 175, height: size.height / 20)
+        cartButton.layer.borderWidth = 5
         
         ///CHANGE TO ADD CART NOT COMPLETE >>
         cartButton.addTarget(self, action: #selector(AddToCart), for: UIControl.Event.touchUpInside)
@@ -78,6 +81,7 @@ class ItemScene: SKScene {
                
         visitCartButton = UIButton()
         visitCartButton.frame = CGRect(x: 350, y: 40, width: 50, height: size.height / 30)
+        visitCartButton.layer.borderWidth = 5
         //CHANGE TO VISIT CART SCENE NOT COMPLETE
         visitCartButton.addTarget(self, action: #selector(ChangeCartScene), for: UIControl.Event.touchUpInside)
         view.addSubview(visitCartButton)

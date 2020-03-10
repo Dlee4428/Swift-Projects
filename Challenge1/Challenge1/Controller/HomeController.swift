@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SpriteKit
 
 class HomeController: UIViewController {
     
@@ -16,10 +17,22 @@ class HomeController: UIViewController {
     
     // MARK - INIT
     
+    override func loadView() {
+        self.view = SKView()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = .white
+        //let scene = GameScene(size: CGSize(width: 2048, height: 1536))
+        let scene = ItemScene(size: CGSize(width: 2048, height: 1536))
+        //let scene = ChairScene(size: CGSize(width: 2048, height: 1536))
+        let skView = self.view as! SKView
+        skView.showsFPS = true
+        skView.showsNodeCount = true
+        skView.ignoresSiblingOrder = true
+        scene.scaleMode = .aspectFill
+        skView.presentScene(scene)
         configureNavigationBar()
     }
     

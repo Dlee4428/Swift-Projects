@@ -16,7 +16,10 @@ class ItemScene: SKScene {
     var ARButton:UIButton!
     var cartButton:UIButton!
     var visitCartButton:UIButton!
-    var itemInfoText:UITextField = UITextField();
+    var itemInfoText:UITextView = UITextView();
+    
+    //Text("Writing in text")
+    //.frame(width: 100)
         
     override func didMove(to view: SKView) {//didViewLoad
         
@@ -51,7 +54,7 @@ class ItemScene: SKScene {
         ARButton.layer.borderWidth = 5
         
         ///CHANGE TO AR SCENE NOT COMPLETE >>
-        ARButton.addTarget(self, action: #selector(ChangeChairSence), for: UIControl.Event.touchUpInside)
+        ARButton.addTarget(self, action: #selector(EnterAR), for: UIControl.Event.touchUpInside)
         view.addSubview(ARButton)
         
         //Add to Cart Sprite then Button
@@ -66,7 +69,7 @@ class ItemScene: SKScene {
         cartButton.layer.borderWidth = 5
         
         ///CHANGE TO ADD CART NOT COMPLETE >>
-        cartButton.addTarget(self, action: #selector(ChangeChairSence), for: UIControl.Event.touchUpInside)
+        cartButton.addTarget(self, action: #selector(AddToCart), for: UIControl.Event.touchUpInside)
         view.addSubview(cartButton)
         
         //View Cart Sprite then Button
@@ -91,33 +94,59 @@ class ItemScene: SKScene {
         itemSprite.position = CGPoint(x: 0 , y: 350)
         
         //TextField
-        
+        itemInfoText.isEditable = false
         itemInfoText.frame = CGRect(x: 0, y: 0, width: 300, height: 175)
         itemInfoText.center = CGPoint(x: view.bounds.width / 2, y: 550)
         itemInfoText.backgroundColor = UIColor.white
       
-        itemInfoText.borderStyle = UITextField.BorderStyle.line
+        //itemInfoText.borderStyle = UITextField.BorderStyle.line
         
-        itemInfoText.placeholder = "Name, Price, Colour, placeholders"
+        itemInfoText.text = "Name, Price, Colour, placeholders"
         itemInfoText.textColor = UIColor.black
         itemInfoText.font = UIFont.systemFont(ofSize: 17)
         view.addSubview(itemInfoText)
         
+        
+        
+        
     }
  
-    
+    //backButton find last scene. Need data storge
     @objc func ChangeChairSence(){
+       
+        backButton.removeFromSuperview()
+        backButton = nil
+        ARButton.removeFromSuperview()
+        ARButton = nil
+        cartButton.removeFromSuperview()
+        cartButton = nil
+        visitCartButton.removeFromSuperview()
+        visitCartButton = nil
+        itemInfoText.removeFromSuperview()
         
+       
         let skView = self.view!
         let Scene = ChairScene(size: CGSize(width: 2048, height: 1536))
         Scene.scaleMode = .aspectFill
         skView.presentScene(Scene)
     }
     
+    @objc func EnterAR(){
+           
+          
+    }
+    
+    @objc func AddToCart(){
+           
+          
+    }
+    
     @objc func ChangeCartScene(){
            
           
     }
+    
+    
     
   
 }

@@ -16,9 +16,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // This allow us to make Container controller is the main controller
-       // window = UIWindow()
-       // window?.makeKeyAndVisible()
-        //window?.rootViewController = ContainerController()
+        window = UIWindow()
+        window?.makeKeyAndVisible()
+        window?.rootViewController = GameViewController()
         
         // For navigation appearance
         

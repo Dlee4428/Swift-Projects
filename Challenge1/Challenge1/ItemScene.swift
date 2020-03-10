@@ -21,7 +21,7 @@ class ItemScene: SKScene {
     //Text("Writing in text")
     //.frame(width: 100)
         
-    override func didMove(to view: SKView) {//didViewLoad
+override func didMove(to view: SKView) {//didViewLoad
         
         // Background Sprite
         let background = SKSpriteNode(imageNamed: "cellBackground")
@@ -94,20 +94,19 @@ class ItemScene: SKScene {
         itemSprite.position = CGPoint(x: 0 , y: 350)
         
         //TextField
+        
+        //How to Change font and color, and make text unclickable
         itemInfoText.isEditable = false
-        itemInfoText.frame = CGRect(x: 0, y: 0, width: 300, height: 175)
-        itemInfoText.center = CGPoint(x: view.bounds.width / 2, y: 550)
-        itemInfoText.backgroundColor = UIColor.white
-      
-        //itemInfoText.borderStyle = UITextField.BorderStyle.line
-        
-        itemInfoText.text = "Name, Price, Colour, placeholders"
+        itemInfoText.font = UIFont(name: "Times New Roman", size: 20)
         itemInfoText.textColor = UIColor.black
-        itemInfoText.font = UIFont.systemFont(ofSize: 17)
-        view.addSubview(itemInfoText)
-        
-        
-        
+        //
+    
+        itemInfoText.frame = CGRect(x: 0, y: 0, width: 300, height: 175)
+        itemInfoText.center = CGPoint(x: 200, y: 550)
+        itemInfoText.backgroundColor = UIColor.white
+    
+        itemInfoText.text = "Name, Price, Colour, placeholders"
+        view.addSubview(itemInfoText)             
         
     }
  
@@ -124,7 +123,7 @@ class ItemScene: SKScene {
         visitCartButton = nil
         itemInfoText.removeFromSuperview()
         
-       
+        
         let skView = self.view!
         let Scene = ChairScene(size: CGSize(width: 2048, height: 1536))
         Scene.scaleMode = .aspectFill

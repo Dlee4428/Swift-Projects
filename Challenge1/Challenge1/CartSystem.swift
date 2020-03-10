@@ -26,9 +26,9 @@ class CartSystem: SKScene {
          TotalText.isScrollEnabled = false
          TotalText.sizeToFit()
          TotalText.textColor = .black
-         TotalText.frame = CGRect(x: 550, y: 200, width: 280, height: 80)
+         TotalText.frame = CGRect(x: 150, y: 300, width: 280, height: 80)
          //titleText.font = UIFont.systemFont(ofSize: 20.0)
-         TotalText.transform = CGAffineTransform(rotationAngle: CGFloat.pi / 2)
+         //TotalText.transform = CGAffineTransform(rotationAngle: CGFloat.pi / 2)
          view.addSubview(TotalText)
         
       
@@ -37,9 +37,9 @@ class CartSystem: SKScene {
         InfoText.isScrollEnabled = false
         InfoText.sizeToFit()
         InfoText.textColor = .black
-        InfoText.frame = CGRect(x: 300, y: 200, width: 280, height: 80)
+        InfoText.frame = CGRect(x: 150, y: 500, width: 280, height: 80)
         //titleText.font = UIFont.systemFont(ofSize: 20.0)
-        InfoText.transform = CGAffineTransform(rotationAngle: CGFloat.pi / 2)
+        //InfoText.transform = CGAffineTransform(rotationAngle: CGFloat.pi / 2)
         view.addSubview(InfoText)
         
    

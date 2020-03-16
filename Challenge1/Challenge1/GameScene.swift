@@ -117,7 +117,8 @@ class GameScene: SKScene {
            button4 = nil
             
            let skView = self.view!
-           let Scene = TableScene(size: CGSize(width: 2048, height: 1536))
+          //let Scene = TableScene(size: CGSize(width: 2048, height: 1536))
+           let Scene = ARScene(size: CGSize(width: 2048, height: 1536))
            Scene.scaleMode = .aspectFill
            skView.presentScene(Scene)
         
